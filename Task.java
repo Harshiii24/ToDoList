@@ -2,22 +2,21 @@ import java.io.Serializable;
 import java.time.LocalDate;
 
 public class Task implements Serializable {
-    private static final long serialVersionUID = 1L; // Recommended for Serializable classes
+    private static final long serialVersionUID = 1L; 
 
     private String description;
     private boolean completed;
     private LocalDate dueDate;
     private Priority priority;
 
-    // Constructor
+    
     public Task(String description, LocalDate dueDate, Priority priority) {
         this.description = description;
         this.dueDate = dueDate;
         this.priority = priority;
-        this.completed = false; // Tasks are incomplete by default
+        this.completed = false; 
     }
 
-    // Getters and Setters
     public String getDescription() { return description; }
     public void setDescription(String description) { this.description = description; }
     public boolean isCompleted() { return completed; }
@@ -29,7 +28,6 @@ public class Task implements Serializable {
 
     @Override
     public String toString() {
-        // A more descriptive representation for display purposes
         return "Task: " + description + " | Due: " + dueDate + " | Priority: " + priority;
     }
 }
