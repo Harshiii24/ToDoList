@@ -93,7 +93,7 @@ This application is built using **pure Java (no external frameworks)** and runs 
 
 ## 📸 UI Snapshot
 
-![Screenshot 2025-07-26 215153](https://github.com/user-attachments/assets/7153cb7e-0423-4c24-a7d5-cba9e9e6f074)
+![Screenshot 2025-07-26 215728](https://github.com/user-attachments/assets/7523fbbc-3117-40ab-91d4-a3919d98077f)
 ![Screenshot 2025-07-26 215800](https://github.com/user-attachments/assets/42254ad7-d4ae-4fb1-9cfb-39e597a6dccc)
 ![Screenshot 2025-07-26 215650](https://github.com/user-attachments/assets/03da63da-f531-4d8a-b810-74a928e20342)
 ![Screenshot 2025-07-26 215902](https://github.com/user-attachments/assets/1f77b0dd-e7e7-46e6-ae13-a9e3c556822f)
