@@ -16,32 +16,21 @@ public class ToDoListApp extends JFrame {
     private JTextField taskDescriptionField;
     private JComboBox<Priority> priorityComboBox;
     private JSpinner dateSpinner;
-    // UI Components
     private JButton addButton;
-    //private JButton deleteButton;
     private JLabel statusLabel;
-    //private JButton completeButton;
-    //private JButton editButton;
     private enum FilterStatus { ALL, ACTIVE, COMPLETED }
     private enum SortCriterion { DATE, PRIORITY }
-
-    // Variables to hold the current state
     private FilterStatus currentFilter = FilterStatus.ALL;
     private SortCriterion currentSort = SortCriterion.DATE;
     private String searchQuery = "";
-
-    // === Add this UI Component Declaration ===
     private JTextField searchField;
-    // ... other components
-
+    
     public ToDoListApp() {
-    	// 1. Basic Frame Setup
         setTitle("To-Do List Application");
         setSize(800, 600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
 
-        // 2. Load data
         allTasks = SerializationManager.loadTasks(FILENAME);
         listModel = new DefaultListModel<>();
         setupUI();
@@ -56,7 +45,6 @@ public class ToDoListApp extends JFrame {
     }
     
 
- // In ToDoListApp.java
 
     private void showTaskActionDialog(Task task) {
         boolean isTaskCompleted = task.isCompleted();
@@ -183,7 +171,6 @@ public class ToDoListApp extends JFrame {
         filterMenu.add(filterActive);
         filterMenu.add(filterCompleted);
 
-        // --- Sort Menu ---
         JMenu sortMenu = new JMenu("Sort");
         ButtonGroup sortGroup = new ButtonGroup();
 
